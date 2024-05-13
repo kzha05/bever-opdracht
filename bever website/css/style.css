@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  /* Header  */
+
+  header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100vw;
+    border-bottom: rgb(157, 157, 157) 1px solid;
+    background: rgb(57, 57, 57)
+  }
+  
+  figure{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .figure-mid > img{
+    height: 4.9rem;
+  }
+
+  .figure-flags{
+    gap: 2rem;
+  }
+
+  .figure-flags > div{
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+
+  .figure-flags > a > img{
+    height: 4rem;
+  }
+
+    /* Header  */
+
+
+    /* Se  */
+
