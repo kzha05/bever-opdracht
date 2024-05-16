@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zijwaartse Scrollbar</title>
+<style>
+  .container {
+    width: 300px; /* Breedte van de container */
+    overflow-x: scroll; /* Zorgt voor een zijwaartse scrollbar */
+    white-space: nowrap; /* Zorgt ervoor dat de inhoud niet naar de volgende regel gaat */
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .content {
+    width: 600px; /* Breedte van de inhoud, breder dan de container om scrollen mogelijk te maken */
+    height: 100px; /* Hoogte van de inhoud */
+    background-color: #f0f0f0;
+    display: inline-block;
+  }
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- Inhoud die breder is dan de container -->
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nibh vitae velit cursus dapibus. Nullam aliquam, ex nec condimentum venenatis, quam libero vehicula eros, vel cursus justo tortor at odio. Nullam non gravida nibh. Duis at libero nec nisl tempor vestibulum.
+    </div>
+  </div>
+</body>
+</html>
