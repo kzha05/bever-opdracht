@@ -1,3 +1,5 @@
+// Bever drop function
+
 function dropImage() {
     var image = document.getElementById("beaver");
     image.style.display = "block"; 
@@ -17,3 +19,5 @@ function dropImage() {
       }
     }, 5); 
   }
+
+// Bever drop function
