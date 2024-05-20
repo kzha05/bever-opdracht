@@ -24,3 +24,11 @@
 > De targets zijn gemaakt van hout en hebben een diameter van 10cm.
 
 > De IR afstandsbediening word netjes weggewerkt in een speelgoedachtig geweer.
+
+### UPDATE 20-05-2024:
+
+> Na een aantal online simulaties doordat ik nog niet alle componenten nog heb ben ik erachter gekomen dat IR receivers gecombineerd met een algorithme niet logisch zijn en niet precies genoeg zijn om te werken voor een schietspel.
+
+> Als alternatief discusseer ik nu met mijn groep over het gebruik van een laser en een lichtsensor, of een gyroscopische sensor in het geweer zelf gecombineerd met een ESP32-Module.
+
+> Ook werkt de code nu met een array van stepper motors en is StepperControl.cpp en StepperControl.h aangemaakt voor het schoner werken met de stepper motoren. 

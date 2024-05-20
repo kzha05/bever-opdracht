@@ -1,4 +1,6 @@
 IOT/include
-IOT/lib
 IOT/test
+IOT/.idea
+IOT/.pio
 .idea
+cmake-build-debug
