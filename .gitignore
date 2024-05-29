@@ -1,0 +1,6 @@
+IOT/include
+IOT/test
+IOT/.idea
+IOT/.pio
+.idea
+cmake-build-debug
