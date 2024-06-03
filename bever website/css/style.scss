@@ -84,3 +84,18 @@ background: yellow;
   }
 }
 }
+
+@keyframes dropAndSpin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(150vh) rotate(360deg);
+  }
+}
+
+.drop {
+  animation: dropAndSpin 2s forwards;
+  position: absolute;
+  z-index: 10;
+}
