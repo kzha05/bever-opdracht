@@ -1,0 +1,86 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin fcc {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+html {
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
+body {
+width: 100vw;
+@include fcc;
+flex-direction: column;
+}
+
+header {
+background: white;
+@include fcc;
+justify-content: space-between;
+height: 9vh;
+width: 100vw;
+background: rgb(57, 57, 57);
+}
+
+.figure-mid {
+@include fcc;
+width: 7rem;
+aspect-ratio: 1;
+overflow: hidden;
+margin-left: 16rem;
+
+.figure-mid-beaver {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+}
+
+.figure-flags {
+@include fcc;
+justify-content: space-between;
+width: 16rem;
+padding-right: 1rem;
+}
+
+.figure-flags > div {
+font-size: 4rem;
+font-weight: 500;
+font-family: sans-serif;
+}
+
+.figure-flags > a > img {
+height: 4rem;
+}
+
+.vert-scroll {
+@include fcc;
+width: 100vw;
+height: 91vh;
+background: yellow;
+
+.wrap {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  background: red;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+
+  .block {
+    min-width: 50rem;
+    height: 100%;
+    background: blue;
+    @include fcc;
+  }
+}
+}

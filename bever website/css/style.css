@@ -1,88 +1,90 @@
 *, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  /* Header  */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-  header{
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5rem;
-    width: 100vw;
-    background: rgb(57, 57, 57)
-  }
-  
-  figure{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .figure-mid > img{
-    height: 4.9rem;
-  }
+header {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100vw;
+  background: rgb(57, 57, 57);
+}
 
-  .figure-mid-beaver{
-    position: absolute;
-    transition: all 1s ease;
-  }
+.figure-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin-left: 16rem;
+}
+.figure-mid .figure-mid-beaver {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
-  .figure-flags{
-    gap: 2rem;
-  }
+.figure-flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 16rem;
+  padding-right: 1rem;
+}
 
-  .figure-flags > div{
-    font-size: 4rem;
-    font-weight: 500;
-    font-family: sans-serif;
-  }
+.figure-flags > div {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: sans-serif;
+}
 
-  .figure-flags > a > img{
-    height: 4rem;
-  }
+.figure-flags > a > img {
+  height: 4rem;
+}
 
-    /* Header  */
-
-    /* Info Section  */
-
-    .info-div-container {
-      width: 100%; 
-      height: 94.6vh;
-      overflow-x: scroll; 
-      white-space: nowrap; 
-      padding: 1rem;
-    }
-  
-    .info-div-content {
-      width: 95rem; 
-      height: 84rem; 
-      background-color: #f0f0f0;
-      display: inline-block;
-      
-    }
-
-    /* Info Section  */
-
-
-    /* Animatie Section */
-
-
-    .animatie-article{
-      width: 100%;
-      height: 100rem;
-      background: gray;
-    }
-
-
-    /* Animatie Section */
+.vert-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 91vh;
+  background: yellow;
+}
+.vert-scroll .wrap {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  background: red;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.vert-scroll .wrap .block {
+  min-width: 50rem;
+  height: 100%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
