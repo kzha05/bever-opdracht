@@ -13,6 +13,7 @@ align-items: center;
 html {
 font-size: 62.5%;
 scroll-behavior: smooth;
+overflow: hidden;
 }
 
 body {
@@ -98,4 +99,8 @@ background: yellow;
   animation: dropAndSpin 2s forwards;
   position: absolute;
   z-index: 10;
+}
+
+.hidden {
+  display: none;
 }
