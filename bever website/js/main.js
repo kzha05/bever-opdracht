@@ -1,8 +1,6 @@
-// Bever drop function
-
 function dropImage() {
-    var image = document.getElementById("beaver");
-    image.style.display = "block"; 
+  const beaver = document.getElementById('beaver');
+  beaver.classList.add('drop');
 
     var yPos = 0; 
     var dropInterval = setInterval(function() {
@@ -40,4 +38,4 @@ function ToggleAnimation () {
 	burn.classList.add('burn');
 	content.classList.add('content');
 	on = true;
-};
+}
