@@ -1,73 +1,132 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/img/ico/Beaver.ico">
-  <title>Bever Website</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="img/ico/Beaver.ico">
+		<title>Bever Website</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js" defer type="module"></script>
+	</head>
 
-<body>
-  <header class="header">
-    <figure></figure>
-    <figure class="figure-mid">
-      <img class="figure-mid-beaver" onclick="dropImage()" id="beaver" src="img/Beaver.webp" alt="A beaver">
-    </figure>
-    <figure class="figure-flags">
-      <a href="indexNL.html"><img src="img/nl.webp" alt="NL flag"></a>
-      <div>/</div>
-      <a href="indexEN.html"><img src="img/en.webp" alt="EN flag"></a>
-    </figure>
-  </header>
-  <section class="vert-scroll">
-    <div class="wrap">
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-      <figure class="block">
-        <h1>Welkom op de website van de bever</h1>
-      </figure>
-    </div>
-  </section>
-  <section class="animation" onclick="ToggleAnimation()">
-    <div id="content" class="contentclass">
-        <div class="page">
-          <div id="highlight" class=""></div>
-          <div id="burn" class="">
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-            <div class="flame"></div>
-          </div>
-        </div>
-    </div>
-  </figure>
-</body>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<figure></figure> <!-- beaver has to be centered, figure is here for that reason because header justify-center -->
+
+			<figure class="figure-mid">
+				<img class="figure-mid-beaver" id="beaver" src="img/Beaver.webp" alt="A beaver">
+			</figure>
+
+			<figure class="figure-flags">
+				<a href="index.html"><img src="img/nl.webp" alt="NL flag"></a> <!-- todo: language switch -->
+				<div>/</div>
+				<a href="index.html"><img src="img/en.webp" alt="EN flag"></a> <!-- todo: language switch -->
+			</figure>
+		</header>
+
+		<section id="animation-container">
+			<div class="class-container">
+				<div class="lighting-blur">
+					<div class="inner-circle">
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Animation -->
+<!--		<section class="animation-container">-->
+<!--			<div class="animation" id="animationHitbox">-->
+<!--				<div id="content" class="contentclass">-->
+<!--					<div class="page">-->
+<!--						<div id="highlight" class=""></div>-->
+<!--						<div id="burn" class="">-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--							<div class="flame"></div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+
+		<!-- Infinite scroll -->
+		<section class="vert-scroll">
+			<div class="slider">
+				<div class="slide-track">
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="./img/cat.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 
 </html>

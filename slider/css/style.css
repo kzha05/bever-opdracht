@@ -1,80 +1,80 @@
 body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 .slider {
-    height: 20rem; /* Ensure this matches the height of the slides */
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
-    overflow: hidden; /* Ensure overflow is hidden to create the fading effect */
+	height: 20rem; /* Ensure this matches the height of the slides */
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden; /* Ensure overflow is hidden to create the fading effect */
 }
 
 .slide-track {
-    display: flex;
-    width: calc(25rem * 36); /* Adjust the width to accommodate duplicate slides */
-    z-index: 1; /* Ensure slide track is behind the pseudo-elements */
-    animation: scroll 30s linear infinite; /* Apply the animation */
+	display: flex;
+	width: calc(25rem * 36); /* Adjust the width to accommodate duplicate slides */
+	z-index: 1; /* Ensure slide track is behind the pseudo-elements */
+	animation: scroll 30s linear infinite; /* Apply the animation */
 }
 
-.slide-track:hover{
-    animation-play-state: paused;
+.slide-track:hover {
+	animation-play-state: paused;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-25rem * 18)); /* Move the entire width of one set of slides */
-    }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-25rem * 18)); /* Move the entire width of one set of slides */
+	}
 }
 
 .slide {
-    height: 100%; /* Ensure slides take up the full height of the slider */
-    width: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center contents horizontally */
-    padding: 1.5rem;
-    perspective: 10rem;
+	height: 100%; /* Ensure slides take up the full height of the slider */
+	width: 25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Center contents horizontally */
+	padding: 1.5rem;
+	perspective: 10rem;
 }
 
 img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 1s;
+	width: 100%;
+	height: auto; /* Maintain aspect ratio */
+	transition: transform 1s;
 }
 
 img:hover {
-    transform: translateZ(2rem);
+	transform: translateZ(2rem);
 }
 
-.slider::before, 
+.slider::before,
 .slider::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    z-index: 2;
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 15%;
+	z-index: 2;
 }
 
 .slider::before {
-    left: 0;
-    top: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	left: 0;
+	top: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .slider::after {
-    right: 0;
-    top: 0;
-    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	right: 0;
+	top: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
