@@ -22,7 +22,7 @@ html {
 	display: flex;
 	width: calc(25rem * 36); /* Adjust the width to accommodate duplicate slides */
 	z-index: 1; /* Ensure slide track is behind the pseudo-elements */
-	animation: scroll 30s linear infinite; /* Apply the animation */
+	animation: scroll 3s linear infinite; /* Apply the animation */
 }
 
 .slide-track:hover {

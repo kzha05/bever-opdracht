@@ -1,16 +1,12 @@
-import { burn, content, highlight } from '../constants.js';
+import { animationContainer } from '../constants.js';
 
 export default function ToggleAnimation() {
-	const on = highlight.classList.contains('highlight');
+	const on = animationContainer.classList.contains('animation-container');
 
 	if (on) {
-		highlight.classList.remove('highlight');
-		burn.classList.remove('burn');
-		content.classList.remove('content');
+		animationContainer.classList.remove('animation-container');
 		return;
 	}
 
-	highlight.classList.add('highlight');
-	burn.classList.add('burn');
-	content.classList.add('content');
+	animationContainer.classList.add('animation-container');
 }

@@ -1,8 +1,6 @@
 const beaver = document.getElementById('beaver');
 const body = document.querySelector('body');
-const burn = document.getElementById('burn');
-const highlight = document.getElementById('highlight');
-const content = document.getElementById('content');
-const animationHitbox = document.getElementById('animationHitbox');
+const animationContainer = document.getElementById('animation-container');
+const animationHitbox = document.getElementById('fire-animation-button');
 
-export { beaver, body, burn, highlight, content, animationHitbox }
+export { beaver, body, animationContainer, animationHitbox }
