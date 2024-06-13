@@ -1,5 +1,7 @@
 @use "./_animations";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @mixin fcc {
   display: flex;
   justify-content: center;
@@ -29,18 +31,18 @@
       z-index: 1; /* Ensure slide track is behind the pseudo-elements */
       animation: scroll 30s linear infinite; /* Apply the animation */
       gap: 5rem;
-      height: 46rem;
+      height: 52rem;
   
       .slide {
         height: 100%; /* Ensure slides take up the full height of the slider */
-        width: 36rem;
+        width: 87rem;
         display: flex;
         align-items: center;
         justify-content: center; /* Center contents horizontally */
         padding: 1.5rem;
         perspective: 10rem;
         overflow: hidden;
-        background: rgba(199, 119, 64, 0.55);
+        background: #D1BB9E;
         transition: box-shadow 200ms ease-in-out; /* Add transition for box-shadow */
   
         &:hover {
@@ -72,11 +74,11 @@ img {
 .slider::before {
   left: 0;
   top: 0;
-  background: linear-gradient(to right, #F5DEB3 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #EAD8C0 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .slider::after {
   right: 0;
   top: 0;
-  background: linear-gradient(to left, #F5DEB3 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to left, #EAD8C0 0%, rgba(255, 255, 255, 0) 100%);
 }

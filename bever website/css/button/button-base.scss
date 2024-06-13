@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-section{
+  width: 100%;
+  height: 100vh;
+  @include fcc;
+
+  .button{
+    font-family: "Montserrat", sans-serif;
+    width: 15rem;
+    height:10rem;
+    background: #A79277;
+    border: none;
+
+
+    &:hover {
+      box-shadow: 0px 0px 9px rgb(96, 38, 7); /* Apply box-shadow on hover */
+    }
+  }
+}
