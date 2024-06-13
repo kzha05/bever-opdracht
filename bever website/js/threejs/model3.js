@@ -6,7 +6,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 // Get the container element from the HTML
-const container = document.getElementById('canvas2');
+const container = document.getElementById('canvas3');
 
 // Check if the container is found and attach the renderer to it
 if (container) {
@@ -29,14 +29,13 @@ if (container) {
 
     const loader = new GLTFLoader();
 
-    loader.load('img/models/TestBlockout_V1.gltf', function (gltf) {
+    loader.load('img/models/jager.gltf', function (gltf) {
         
         const model = gltf.scene;
         scene.add(model);
 
         model.scale.set(5, 5, 5); 
-        model.position.z = 54;
-        model.position.y = -25;
+
 
         function animate() {
             requestAnimationFrame(animate);
