@@ -1,3 +1,4 @@
+
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -10,7 +11,9 @@ const container = document.getElementById('canvas1');
 
 // Check if the container is found and attach the renderer to it
 if (container) {
-    const renderer = new THREE.WebGLRenderer();
+    // Set alpha to true for transparency
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setClearColor(0x000000, 0); // Set the clear color to transparent
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
     container.appendChild(renderer.domElement);
@@ -49,7 +52,7 @@ if (container) {
 
             if (model) {
                 model.rotation.y = -6.01;
-                model.position.z = 1.6;
+                model.position.z = 2;
                 model.position.x = 0.9;
             }
             controls.update();  // Update the OrbitControls

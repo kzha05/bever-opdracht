@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="img/ico/Beaver.ico">
+		<title>Beaver Website</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js" defer type="module"></script>
+		<script src="js/threejs/model1.js" defer type="module"></script>
+		<script src="js/threejs/model2.js" defer type="module"></script>
+		<script src="js/threejs/model3.js" defer type="module"></script>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<figure></figure> <!-- beaver has to be centered, figure is here for that reason because header justify-center -->
+
+			<figure class="figure-mid">
+				<img class="figure-mid-beaver" id="beaver" src="img/Beaver.webp" alt="A beaver">
+			</figure>
+
+			<figure class="figure-flags">
+				<a href="index.html"><img src="img/nl.webp" alt="NL flag"></a> <!-- todo: language switch -->
+				<div>/</div>
+				<a href="indexEN.html"><img src="img/en.webp" alt="EN flag"></a> <!-- todo: language switch -->
+			</figure>
+		</header>
+
+		<section id="animation-container">
+			<div class="class-container">
+				<div class="lighting-blur">
+					<div class="inner-circle">
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Infinite scroll -->
+		<section class="vert-scroll">
+			<div class="slider">
+				<div class="slide-track">
+
+					<div class="slide slide 1">
+						<div class="slide-split-left">
+							<h2>The Beaver [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+							<p>For the Lenape the beaver was a special animal, because it was one of the animals that
+								Kishelamàkânk helped create everything that consists of the silent, black
+								nothing.
+								Kishelamàkânk fell asleep in this void and dreamed of the world as we know it today,
+								with everything that nature has to offer.
+								The first time Kishelamàkânk created the earth did not go well, after which he created the
+								spirit Nanapush sent to Earth to solve it.
+								After a great flood everything was swept away and the animals he had saved left him
+								help dig sand out of the sea to create a new island.
+								The tortoise had offered to carry this land on his back, as the tortoise was on the
+								water could float.
+								The beaver was one of the animals that bravely tried to do this, but he came
+								floating lifeless to the surface without the necessary land that the muskrat subsequently managed to find
+								obtain.
+								It is therefore not surprising that the beaver is so important to the Lenape, because it has itself
+								sacrificed for the future of their new country and the existence of everything that came with it.
+							</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div id="canvas1"></div>
+					</div>
+
+					<div class="slide slide2">
+						<div class="slide-split-left">
+							<h2>The Lenape [Leh-NAH-Pay]</h2>
+							<p>Lenape translated to “the people” was a collection of indigenous peoples living in, among other things
+								the Delaware area and at the bottom of the Hudson.
+								The women often cared for the small-scale agriculture on which they lived, and for the
+								children and cooking.
+								On the other hand, the men hunted game and caught fish from the rivers.
+								Both husband and wife told many stories and made art and music all based
+								on these stories and culture.
+								Many of these stories were also based on the beaver wanting something specific
+								Below is an example of such a story:
+								The story of the beaver and the muskrat
+								This story is about the contrast between the beaver and the muskrat and how their characters clash.
+								The beaver is known for its industrious personality and checkers skills
+								to build.
+								In contrast, the muskrat is more opportunistic and less skilled.
+								The purpose of this story is to shed light on collaboration and the importance of one
+								strong community.
+								The beaver is often used in stories to show how it helps conserve the
+								environment and nature.</p>
+						</div>
+					</div>		
+					
+					<div class="slide">
+						<div id="canvas2"></div>
+					</div>
+
+					<div class="slide slide3">
+						<div class="slide-split-left">
+							<h2>The Dutch Colonizers [Swanendael - [SWAH-nen-dahl]</h2>
+							<p>Swanendael, or Zwaanendael means the valley of the swans.
+								This was how the Lenape referred to the Dutch colonies, specifically the
+								Dutch settlement founded in Delaware in 1631.
+								In the year 1609 the VOC sponsored an expedition to America.
+								The expedition arrived at the Hudson River, where the earthworks for the Dutch
+								settlements were laid.
+								Beavers were almost extinct in the Netherlands, but there were still many in America
+								beavers to be found.
+								In 1614 the first trading post was built near present-day Albany, New
+								York.
+								The trade in beaver skins soon caught on and the settlement was established around 1631
+								the name for the Dutch colonies came from: Swanendael.
+								Hunting for the Lenape was very different from the Dutch;
+								The Lenape had respect for nature and its conservation and tried one here
+								to find balance...
+								The Dutch came up with new methods to catch as many beavers as possible
+								pelts without considering the conservation of the beaver population.
+								The Lenape still saw the beaver as a beaver, but the Dutch no longer saw the beaver as anything
+								then a way to make money; a walking hat.</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div id="canvas3"></div>
+					</div>
+
+					<div class="slide slide4">
+						<div class="slide-split-left">
+							<button class="button" id="fire-animation-button">
+								click me!
+							</button>
+						</div>
+					</div>
+
+<!--					duplicate slides for infinite scroll-->
+
+					<div class="slide slide 1">
+						<div class="slide-split-left">
+							<h2>The Beaver [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+							<p>For the Lenape the beaver was a special animal, because it was one of the animals that
+								Kishelamàkânk helped create everything that consists of the silent, black
+								nothing.
+								Kishelamàkânk fell asleep in this void and dreamed of the world as we know it today,
+								with everything that nature has to offer.
+								The first time Kishelamàkânk created the earth did not go well, after which he created the
+								spirit Nanapush sent to Earth to solve it.
+								After a great flood everything was swept away and the animals he had saved left him
+								help dig sand out of the sea to create a new island.
+								The tortoise had offered to carry this land on his back, as the tortoise was on the
+								water could float.
+								The beaver was one of the animals that bravely tried to do this, but he came
+								floating lifeless to the surface without the necessary land that the muskrat subsequently managed to find
+								obtain.
+								It is therefore not surprising that the beaver is so important to the Lenape, because it has itself
+								sacrificed for the future of their new country and the existence of everything that came with it.
+							</p>
+						</div>
+					</div>
+
+					<div class="slide slide2">
+						<div class="slide-split-left">
+							<h2>The Lenape [Leh-NAH-Pay]</h2>
+							<p>Lenape translated to “the people” was a collection of indigenous peoples living in, among other things
+								the Delaware area and at the bottom of the Hudson.
+								The women often cared for the small-scale agriculture on which they lived, and for the
+								children and cooking.
+								On the other hand, the men hunted game and caught fish from the rivers.
+								Both husband and wife told many stories and made art and music all based
+								on these stories and culture.
+								Many of these stories were also based on the beaver wanting something specific
+								Below is an example of such a story:
+								The story of the beaver and the muskrat
+								This story is about the contrast between the beaver and the muskrat and how their characters clash.
+								The beaver is known for its industrious personality and checkers skills
+								to build.
+								In contrast, the muskrat is more opportunistic and less skilled.
+								The purpose of this story is to shed light on collaboration and the importance of one
+								strong community.
+								The beaver is often used in stories to show how it helps conserve the
+								environment and nature.</p>
+						</div>
+					</div>		
+
+					<div class="slide slide3">
+						<div class="slide-split-left">
+							<h2>The Dutch Colonizers [Swanendael - [SWAH-nen-dahl]</h2>
+							<p>Swanendael, or Zwaanendael means the valley of the swans.
+								This was how the Lenape referred to the Dutch colonies, specifically the
+								Dutch settlement founded in Delaware in 1631.
+								In the year 1609 the VOC sponsored an expedition to America.
+								The expedition arrived at the Hudson River, where the earthworks for the Dutch
+								settlements were laid.
+								Beavers were almost extinct in the Netherlands, but there were still many in America
+								beavers to be found.
+								In 1614 the first trading post was built near present-day Albany, New
+								York.
+								The trade in beaver skins soon caught on and the settlement was established around 1631
+								the name for the Dutch colonies came from: Swanendael.
+								Hunting for the Lenape was very different from the Dutch;
+								The Lenape had respect for nature and its conservation and tried one here
+								to find balance...
+								The Dutch came up with new methods to catch as many beavers as possible
+								pelts without considering the conservation of the beaver population.
+								The Lenape still saw the beaver as a beaver, but the Dutch no longer saw the beaver as anything
+								then a way to make money; a walking hat.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="button-section">
+
+		</section>
+	</body>
+
+</html>
