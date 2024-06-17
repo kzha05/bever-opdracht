@@ -48,8 +48,7 @@ header {
 .figure-mid .figure-mid-beaver {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   z-index: 999;
 }
 
@@ -99,6 +98,8 @@ header {
 @keyframes inner-circle-grow {
   45% {
     border: 3px solid #FFFB5C;
+    -webkit-box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
+    -moz-box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
     box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
   }
   90% {
@@ -121,6 +122,8 @@ header {
     width: 0;
     left: 8%;
     bottom: 76%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     background-color: #fffc98;
   }
@@ -172,6 +175,8 @@ header {
     width: 20px;
     left: 5%;
     bottom: 76%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(-40deg);
     opacity: 1;
@@ -186,6 +191,8 @@ header {
     left: 7%;
     bottom: 76%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -199,6 +206,8 @@ header {
     left: 31%;
     transform: rotate(-17deg);
     top: 2%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 1;
   }
@@ -252,6 +261,8 @@ header {
     width: 0;
     left: 31%;
     top: 3%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(-27deg);
     opacity: 1;
@@ -266,6 +277,8 @@ header {
     left: 31%;
     top: 3%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -279,6 +292,8 @@ header {
     left: 40%;
     transform: rotate(-15deg);
     top: -6%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 0;
   }
@@ -329,6 +344,8 @@ header {
   46% {
     left: 40%;
     top: -2%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(-10deg);
     opacity: 0;
@@ -343,6 +360,8 @@ header {
     left: 40%;
     top: -2%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -356,6 +375,8 @@ header {
     right: 20%;
     transform: rotate(0deg);
     top: 5%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 0;
   }
@@ -405,6 +426,8 @@ header {
     width: 20px;
     right: 20%;
     top: 5%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(10deg);
     opacity: 0;
@@ -419,6 +442,8 @@ header {
     right: 20%;
     top: 7%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -432,6 +457,8 @@ header {
     left: 98%;
     transform: rotate(15deg);
     top: 38%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 0;
   }
@@ -484,6 +511,8 @@ header {
     top: 38%;
     height: 20px;
     width: 20px;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(-10deg);
     opacity: 0;
@@ -498,6 +527,8 @@ header {
     left: 98%;
     top: 38%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -511,6 +542,8 @@ header {
     left: 96%;
     transform: rotate(45deg);
     top: 35%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 0;
   }
@@ -564,6 +597,8 @@ header {
     width: 20px;
     left: 90%;
     top: 35%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(50deg);
     opacity: 1;
@@ -578,6 +613,8 @@ header {
     left: 100%;
     top: 38%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -591,6 +628,8 @@ header {
     left: 63%;
     transform: rotate(70deg);
     top: 91%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 1;
   }
@@ -636,6 +675,8 @@ header {
   }
   43% {
     transform: rotate(45deg);
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     opacity: 1;
   }
@@ -644,6 +685,8 @@ header {
     width: 0;
     left: 80%;
     top: 93%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     transform: rotate(65deg);
     opacity: 0;
@@ -659,6 +702,8 @@ header {
     left: 69%;
     transform: rotate(80deg);
     top: 80%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 1;
   }
@@ -710,6 +755,8 @@ header {
     width: 0;
     left: 79%;
     top: 92%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(75deg);
     opacity: 1;
@@ -723,6 +770,8 @@ header {
     width: 0;
     left: 79%;
     top: 90%;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 0;
   }
@@ -737,6 +786,8 @@ header {
     left: 23%;
     top: 85%;
     transform: rotate(70deg);
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 1;
   }
@@ -788,6 +839,8 @@ header {
     width: 20px;
     left: 23%;
     top: 87%;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(65deg);
     opacity: 1;
@@ -802,6 +855,8 @@ header {
     left: 29%;
     top: 97%;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -815,6 +870,8 @@ header {
     top: 57%;
     left: 0;
     transform: rotate(-10deg);
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
     opacity: 1;
   }
@@ -867,6 +924,8 @@ header {
     top: 57%;
     left: -7%;
     opacity: 1;
+    -webkit-box-shadow: 0 0 5px 4px #FFFB5C;
+    -moz-box-shadow: 0 0 5px 4px #FFFB5C;
     box-shadow: 0 0 5px 4px #FFFB5C;
     transform: rotate(-10deg);
   }
@@ -880,6 +939,8 @@ header {
     top: 57%;
     left: 0;
     opacity: 0;
+    -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+    -moz-box-shadow: 0 0 0 0 #FFFB5C;
     box-shadow: 0 0 0 0 #FFFB5C;
   }
   90% {
@@ -918,6 +979,8 @@ header {
   width: 100%;
   background: #000;
   border: 3px solid #FFFB5C;
+  -webkit-box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
+  -moz-box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
   box-shadow: inset 0 0 6px 2px #FFFB5C, inset 0 0 5px 6px rgba(243, 108, 0, 0.5), 0 0 6px 2px #FFFB5C, 0 0 15px 10px rgba(241, 124, 4, 0.6), 0 0 8px 11px rgba(28, 9, 1, 0.9215686275), inset 0 0 29px 22px rgba(196, 114, 15, 0.2588235294);
   animation: inner-circle-grow var(--animationduration) linear forwards;
 }
@@ -926,6 +989,8 @@ header {
   height: 20px;
   background-color: #fffc98;
   position: absolute;
+  -webkit-box-shadow: 0 0 0 0 #FFFB5C;
+  -moz-box-shadow: 0 0 0 0 #FFFB5C;
   box-shadow: 0 0 0 0 #FFFB5C;
   border-radius: 50% 0;
 }
@@ -975,7 +1040,7 @@ header {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-450rem); /* Move the entire width of one set of slides */
+    transform: translateX(-368rem); /* Move the entire width of one set of slides including gaps */
   }
 }
 .vert-scroll {
@@ -999,9 +1064,9 @@ header {
 }
 .slider .slide-track {
   display: flex;
-  width: 900rem; /* Adjust the width to accommodate duplicate slides */
+  width: 736rem; /* Adjust the width to accommodate duplicate slides and gaps */
   z-index: 1; /* Ensure slide track is behind the pseudo-elements */
-  animation: scroll 30s linear infinite; /* Apply the animation */
+  animation: scroll 60s linear infinite; /* Apply the animation */
   gap: 5rem;
   height: 52rem;
 }
@@ -1078,25 +1143,9 @@ img {
   align-items: center;
 }
 
-#canvas1 {
+#canvas1, #canvas2, #canvas3 {
   background-color: #000;
   width: 100%;
-  height: 80%;
-  border: 1px solid black;
-  margin: 1rem;
-}
-
-#canvas2 {
-  background-color: #000;
-  width: 120%;
-  height: 80%;
-  border: 1px solid black;
-  margin: 1rem;
-}
-
-#canvas3 {
-  background-color: #000;
-  width: 120%;
   height: 80%;
   border: 1px solid black;
   margin: 1rem;
@@ -1111,4 +1160,6 @@ img {
 }
 .button:hover {
   box-shadow: 0px 0px 9px rgb(96, 38, 7); /* Apply box-shadow on hover */
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
