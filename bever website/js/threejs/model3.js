@@ -35,13 +35,16 @@ if (container) {
         scene.add(model);
 
         model.scale.set(5, 5, 5); 
+        model.position.y = -2;
+        model.position.z = 90;
 
 
         function animate() {
             requestAnimationFrame(animate);
             
             if (model) {
-                model.rotation.y += 0.001; 
+                model.rotation.y += 0.006; 
+
             }
             renderer.render(scene, camera);
         }
