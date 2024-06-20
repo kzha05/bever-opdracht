@@ -32,7 +32,7 @@ if (container) {
 
     const loader = new GLTFLoader();
 
-    loader.load('img/models/jager.gltf', function (gltf) {
+    loader.load('img/models/lenapeModel.glb', function (gltf) {
         const model = gltf.scene;
 
         // Create a group and add the model to it

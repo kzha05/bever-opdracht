@@ -35,7 +35,7 @@ if (container) {
 
     const loader = new GLTFLoader();
 
-    loader.load('img/models/rem700animatie2.gltf', function (gltf) {
+    loader.load('img/models/Rem700ColorAnimation.gltf', function (gltf) {
         const model = gltf.scene;
         scene.add(model);
         model.scale.set(5, 5, 5);
