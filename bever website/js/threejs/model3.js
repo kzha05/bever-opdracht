@@ -1,4 +1,3 @@
-
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -7,7 +6,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 // Get the container element from the HTML
-const container = document.getElementById('canvas1');
+const container = document.getElementById('canvas3');
 
 // Check if the container is found and attach the renderer to it
 if (container) {
@@ -22,6 +21,7 @@ if (container) {
     controls.enableDamping = true; 
     controls.dampingFactor = 0.25; 
     controls.screenSpacePanning = false; 
+    controls.target.set(0, 0, 0); // Set the target to the origin
 
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
@@ -30,47 +30,36 @@ if (container) {
     directionalLight.position.set(5, 10, 7.5);
     scene.add(directionalLight);
 
-    camera.position.z = 4;
-    camera.position.y = 0.5;
-
     const loader = new GLTFLoader();
 
-    loader.load('img/models/rem700animatie2.gltf', function (gltf) {
+    loader.load('img/models/jager.gltf', function (gltf) {
         const model = gltf.scene;
-        scene.add(model);
+
+        // Create a group and add the model to it
+        const group = new THREE.Group();
+        group.add(model);
+        scene.add(group);
+
         model.scale.set(5, 5, 5);
+        // Position the model within the group
+        model.position.y = -2;
 
-        const mixer = new THREE.AnimationMixer(model);
-        const animations = gltf.animations;
+        // Position the group
+        group.position.z = 90;
 
-        const clock = new THREE.Clock();
+        // Ensure the controls target the group
+        controls.target.copy(group.position);
+        controls.update();
 
         function animate() {
             requestAnimationFrame(animate);
-            const delta = clock.getDelta();
-            mixer.update(delta);
 
-            if (model) {
-                model.rotation.y = -6.01;
-                model.position.z = 2;
-                model.position.x = 0.9;
+            if (group) {
+                group.rotation.y += 0.006;
             }
-            controls.update();  // Update the OrbitControls
+            controls.update(); // Update controls every frame
             renderer.render(scene, camera);
         }
-
-        // Delay the start of the animations by 2 seconds
-        setTimeout(() => {
-            if (animations && animations.length) {
-                animations.forEach((clip) => {
-                    const action = mixer.clipAction(clip);
-                    action.setLoop(THREE.LoopOnce);
-                    action.clampWhenFinished = true;
-                    action.play();
-                });
-            }
-        }, 2000);
-
         animate();
 
     }, undefined, function (error) {
@@ -85,6 +74,10 @@ if (container) {
         camera.updateProjectionMatrix();
         renderer.setSize(width, height);
     });
+
+    // Set the initial position of the camera
+    camera.position.set(0, 0, 100); // Move the camera back
+    controls.update(); // Update the controls with the new camera position
 } else {
     console.error('Container element not found');
 }

@@ -7,28 +7,28 @@
 		<title>Bever Website</title>
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/main.js" defer type="module"></script>
+		<script src="js/threejs/model1.js" defer type="module"></script>
+		<script src="js/threejs/model2.js" defer type="module"></script>
+		<script src="js/threejs/model3.js" defer type="module"></script>
 	</head>
 
 	<body>
-		   <!-- Header -->
-		   <header class="header">
+		<!-- Header -->
+		<header class="header">
 			<figure></figure> <!-- beaver has to be centered, figure is here for that reason because header justify-center -->
-	
+
 			<figure class="figure-mid">
 				<img class="figure-mid-beaver" id="beaver" src="img/Beaver.webp" alt="A beaver">
 			</figure>
-	
+
 			<figure class="figure-flags">
 				<a href="index.html"><img src="img/nl.webp" alt="NL flag"></a> <!-- todo: language switch -->
 				<div>/</div>
-				<a href="index.html"><img src="img/en.webp" alt="EN flag"></a> <!-- todo: language switch -->
+				<a href="indexEN.html"><img src="img/en.webp" alt="EN flag"></a> <!-- todo: language switch -->
 			</figure>
 		</header>
-	
+
 		<section id="animation-container">
-			<div id="beaver-walking" class="untitled-artwork">
-			<img src="./img/Beaver_Walking.gif" alt="Beaver walking">
-		  </div>
 			<div class="class-container">
 				<div class="lighting-blur">
 					<div class="inner-circle">
@@ -46,29 +46,185 @@
 				</div>
 			</div>
 		</section>
-		<button id="fire-animation-button">
-			fire animation wowoeoeoeo!!!
-		</button>
-	
-		
 
-	
+
 		<!-- Infinite scroll -->
 		<section class="vert-scroll">
 			<div class="slider">
 				<div class="slide-track">
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fugit incidunt ipsa, iste magni minima minus mollitia totam vel. Aliquid debitis deserunt ducimus eveniet id quam, quis quo rerum temporibus.</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam distinctio laboriosam! Adipisci atque blanditiis cum dolor dolorum eveniet, impedit in, itaque libero non odio quisquam ratione repellat totam veritatis?</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, pariatur quibusdam! Adipisci assumenda eaque et inventore quod velit? Ab, dolor eos excepturi expedita hic illo perspiciatis possimus tenetur totam ut?</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam aut magni nam recusandae veniam! Assumenda at in labore laboriosam, magnam modi mollitia officia possimus quidem reprehenderit sint veniam vero!</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam omnis, ullam? Blanditiis facere facilis illum! Asperiores commodi, deserunt dolorum nostrum odio quidem ratione reiciendis sint sit tenetur voluptatem voluptates voluptatum!</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam harum incidunt laudantium vero. Consequatur eligendi facere incidunt modi neque omnis perspiciatis, totam ullam vel vitae? Cum doloribus laudantium suscipit!</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur dolorem ea enim, ex magnam nisi quas voluptatem voluptatum. Asperiores eius reprehenderit voluptates voluptatibus. Assumenda harum laborum perferendis quam quis?</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, eveniet exercitationem nulla odio pariatur totam velit. Deleniti dolorum illum ipsum minus, nesciunt nulla odio, perferendis quae, quasi quo soluta!</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, architecto blanditiis debitis esse et exercitationem laudantium minima, quaerat quos reprehenderit sequi tenetur ullam velit? Cumque deleniti laboriosam porro quidem tempore.</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores ducimus error est ex facere inventore iste laborum magni maxime molestiae officia praesentium qui quo repudiandae, similique sit tenetur vero?</div>
+
+					<div class="slide slide 1">
+						<div class="slide-split-left">
+							<h2>De Bever [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+							<p>Voor de Lenape was de bever een bijzonder dier, het was namelijk een van de dieren die
+								Kishelamàkânk geholpen hebben met het creëren van alles dat bestaat uit het stille, zwarte
+								niets.
+								Kishelamàkânk viel in deze leegte in slaap en droomde van de wereld zoals we hem nu kennen,
+								met alles dat de natuur te bieden heeft.
+								De eerste keer dat Kishelamàkânk de aarde had geschapen verliep niet goed, waarna hij de
+								geest Nanapush naar de aarde stuurde om het op te lossen.
+								Na een grote overstroming was alles weggevaagd en de dieren die hij had gered gingen hem
+								helpen zand uit de zee te duiken om er een nieuw eiland van te maken.
+								De schildpad had aangeboden dit land op zijn rug te dragen, aangezien de schildpad op het
+								water kon drijven.
+								De bever was een van de dieren die dapper heeft geprobeerd om dit te doen, maar hij kwam
+								levenloos boven drijven zonder het nodige land die de muskusrat daarna wel heeft weten te
+								bemachtigen.
+								Het is daarom niet raar dat de bever voor de Lenape zo belangrijk is, hij heeft zich namelijk
+								opgeofferd voor de toekomst van hun nieuwe land en het bestaan van alles dat hier bij kwam.
+							</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div id="canvas1"></div>
+					</div>
+
+					<div class="slide slide2">
+						<div class="slide-split-left">
+							<h2>De Lenape [Leh-NAH-Pay]</h2>
+							<p>Lenape vertaald naar “de mensen” was een verzameling inheemse volken die onder andere in
+								het gebied Delaware en aan de onderzijde van de Hudson leefden.
+								De vrouwen zorgden vaak voor de kleinschalige landbouw waar ze van leefden, en voor de
+								kinderen en het koken.
+								Daarentegen zorgden de mannen voor het jagen van wild en vingen vis uit de rivieren.
+								Beide man en vrouw vertelden veel verhalen en maakten kunst en muziek allemaal gebaseerd
+								op deze verhalen en cultuur.
+								Ook waren vele van deze verhalen gebaseerd op de bever waarin deze iets specifieks wilt
+								vertellen, hieronder een voorbeeld van zo’n verhaal:
+								Het verhaal van de bever en de muskusrat
+								Dit verhaal gaat over het contrast tussen de bever en de muskusrat en hoe hun karakter botst.
+								De bever staat bekend om zijn ijverige persoonlijkheid en vaardigheid waarmee hij dammen kan
+								bouwen.
+								In contrast is de muskusrat meer opportunistisch en minder vaardig.
+								Het doel van dit vertelsel is om een licht te leggen op samenwerking en het belang van een
+								sterke gemeenschap.
+								Vaak wordt de bever in verhalen gebruikt om te laten zien hoe hij helpt met het behoud van de
+								omgeving en de natuur.</p>
+						</div>
+					</div>		
+					
+					<div class="slide">
+						<div id="canvas2"></div>
+					</div>
+
+					<div class="slide slide3">
+						<div class="slide-split-left">
+							<h2>De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]</h2>
+							<p>Swanendael, oftewel Zwaanendael betekent de vallei van de zwanen.
+								Dit was hoe de Lenape naar de Nederlandse kolonies refereerden, specifiek naar de
+								Nederlandse nederzetting die in 1631 in Delaware is gesticht.
+								In het jaar 1609 sponsorde de VOC een expeditie naar Amerika.
+								De expeditie kwam aan bij de Hudson rivier, waar het grondwerk voor Nederlandse
+								nederzettingen werd gelegd.
+								Bevers waren in Nederland al zo goed als uitgestorven, maar in Amerika waren er nog heel veel
+								bevers te vinden.
+								In 1614 was de eerste handelspost gebouwd in de buurt van het tegenwoordige Albany, New
+								York.
+								De handel in beverhuiden sloeg al snel aan en rond 1631 werd de nederzetting gevestigd waar
+								de naam voor de Nederlandse kolonies vandaan kwam: Swanendael.
+								Jagen was voor de Lenape heel anders voor de Nederlanders;
+								De lenape hadden respect voor de natuur en het behoud hiervan en probeerden hier een
+								balans in te vinden..
+								De Nederlanders kwamen met nieuwe methodes om bevers te vangen die zo veel mogelijk
+								vachten moesten opleveren zonder stil te staan bij het behoud van de beverpopulatie.
+								De Lenape zagen de bever nog als bever, maar de Nederlanders zagen de bever als niets meer
+								dan een manier om geld te verdienen; een wandelende hoed.</p>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div id="canvas3"></div>
+					</div>
+
+					<div class="slide slide4">
+						<div class="slide-split-left">
+							<button class="button" id="fire-animation-button">
+								click me!
+							</button>
+						</div>
+					</div>
+
+<!--					duplicate slides for infinite scroll-->
+
+					<div class="slide slide 1">
+						<div class="slide-split-left">
+							<h2>De Bever [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+							<p>Voor de Lenape was de bever een bijzonder dier, het was namelijk een van de dieren die
+								Kishelamàkânk geholpen hebben met het creëren van alles dat bestaat uit het stille, zwarte
+								niets.
+								Kishelamàkânk viel in deze leegte in slaap en droomde van de wereld zoals we hem nu kennen,
+								met alles dat de natuur te bieden heeft.
+								De eerste keer dat Kishelamàkânk de aarde had geschapen verliep niet goed, waarna hij de
+								geest Nanapush naar de aarde stuurde om het op te lossen.
+								Na een grote overstroming was alles weggevaagd en de dieren die hij had gered gingen hem
+								helpen zand uit de zee te duiken om er een nieuw eiland van te maken.
+								De schildpad had aangeboden dit land op zijn rug te dragen, aangezien de schildpad op het
+								water kon drijven.
+								De bever was een van de dieren die dapper heeft geprobeerd om dit te doen, maar hij kwam
+								levenloos boven drijven zonder het nodige land die de muskusrat daarna wel heeft weten te
+								bemachtigen.
+								Het is daarom niet raar dat de bever voor de Lenape zo belangrijk is, hij heeft zich namelijk
+								opgeofferd voor de toekomst van hun nieuwe land en het bestaan van alles dat hier bij kwam.
+							</p>
+						</div>
+					</div>
+
+					<div class="slide slide2">
+						<div class="slide-split-left">
+							<h2>De Lenape [Leh-NAH-Pay]</h2>
+							<p>Lenape vertaald naar “de mensen” was een verzameling inheemse volken die onder andere in
+								het gebied Delaware en aan de onderzijde van de Hudson leefden.
+								De vrouwen zorgden vaak voor de kleinschalige landbouw waar ze van leefden, en voor de
+								kinderen en het koken.
+								Daarentegen zorgden de mannen voor het jagen van wild en vingen vis uit de rivieren.
+								Beide man en vrouw vertelden veel verhalen en maakten kunst en muziek allemaal gebaseerd
+								op deze verhalen en cultuur.
+								Ook waren vele van deze verhalen gebaseerd op de bever waarin deze iets specifieks wilt
+								vertellen, hieronder een voorbeeld van zo’n verhaal:
+								Het verhaal van de bever en de muskusrat
+								Dit verhaal gaat over het contrast tussen de bever en de muskusrat en hoe hun karakter botst.
+								De bever staat bekend om zijn ijverige persoonlijkheid en vaardigheid waarmee hij dammen kan
+								bouwen.
+								In contrast is de muskusrat meer opportunistisch en minder vaardig.
+								Het doel van dit vertelsel is om een licht te leggen op samenwerking en het belang van een
+								sterke gemeenschap.
+								Vaak wordt de bever in verhalen gebruikt om te laten zien hoe hij helpt met het behoud van de
+								omgeving en de natuur.</p>
+						</div>
+					</div>
+
+					<div class="slide slide3">
+						<div class="slide-split-left">
+							<h2>De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]</h2>
+							<p>Swanendael, oftewel Zwaanendael betekent de vallei van de zwanen.
+								Dit was hoe de Lenape naar de Nederlandse kolonies refereerden, specifiek naar de
+								Nederlandse nederzetting die in 1631 in Delaware is gesticht.
+								In het jaar 1609 sponsorde de VOC een expeditie naar Amerika.
+								De expeditie kwam aan bij de Hudson rivier, waar het grondwerk voor Nederlandse
+								nederzettingen werd gelegd.
+								Bevers waren in Nederland al zo goed als uitgestorven, maar in Amerika waren er nog heel veel
+								bevers te vinden.
+								In 1614 was de eerste handelspost gebouwd in de buurt van het tegenwoordige Albany, New
+								York.
+								De handel in beverhuiden sloeg al snel aan en rond 1631 werd de nederzetting gevestigd waar
+								de naam voor de Nederlandse kolonies vandaan kwam: Swanendael.
+								Jagen was voor de Lenape heel anders voor de Nederlanders;
+								De lenape hadden respect voor de natuur en het behoud hiervan en probeerden hier een
+								balans in te vinden..
+								De Nederlanders kwamen met nieuwe methodes om bevers te vangen die zo veel mogelijk
+								vachten moesten opleveren zonder stil te staan bij het behoud van de beverpopulatie.
+								De Lenape zagen de bever nog als bever, maar de Nederlanders zagen de bever als niets meer
+								dan een manier om geld te verdienen; een wandelende hoed.</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
+		<section class="button-section">
+
+		</section>
 	</body>
-	</html>
+
+</html>
