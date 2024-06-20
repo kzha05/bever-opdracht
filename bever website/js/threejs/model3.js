@@ -10,7 +10,9 @@ const container = document.getElementById('canvas3');
 
 // Check if the container is found and attach the renderer to it
 if (container) {
-    const renderer = new THREE.WebGLRenderer();
+    // Set alpha to true for transparency
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setClearColor(0x000000, 0); // Set the clear color to transparent
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
     container.appendChild(renderer.domElement);
@@ -19,6 +21,7 @@ if (container) {
     controls.enableDamping = true; 
     controls.dampingFactor = 0.25; 
     controls.screenSpacePanning = false; 
+    controls.target.set(0, 0, 0); // Set the target to the origin
 
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
@@ -30,22 +33,31 @@ if (container) {
     const loader = new GLTFLoader();
 
     loader.load('img/models/jager.gltf', function (gltf) {
-        
         const model = gltf.scene;
-        scene.add(model);
 
-        model.scale.set(5, 5, 5); 
+        // Create a group and add the model to it
+        const group = new THREE.Group();
+        group.add(model);
+        scene.add(group);
+
+        model.scale.set(5, 5, 5);
+        // Position the model within the group
         model.position.y = -2;
-        model.position.z = 90;
 
+        // Position the group
+        group.position.z = 90;
+
+        // Ensure the controls target the group
+        controls.target.copy(group.position);
+        controls.update();
 
         function animate() {
             requestAnimationFrame(animate);
-            
-            if (model) {
-                model.rotation.y += 0.006; 
 
+            if (group) {
+                group.rotation.y += 0.006;
             }
+            controls.update(); // Update controls every frame
             renderer.render(scene, camera);
         }
         animate();
@@ -64,7 +76,8 @@ if (container) {
     });
 
     // Set the initial position of the camera
-    camera.position.z = 100;
+    camera.position.set(0, 0, 100); // Move the camera back
+    controls.update(); // Update the controls with the new camera position
 } else {
     console.error('Container element not found');
 }
