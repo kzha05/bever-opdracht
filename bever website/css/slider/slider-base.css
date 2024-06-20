@@ -4,7 +4,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-450rem); /* Move the entire width of one set of slides */
+    transform: translateX(-368rem); /* Move the entire width of one set of slides including gaps */
   }
 }
 .vert-scroll {
@@ -28,9 +28,9 @@
 }
 .slider .slide-track {
   display: flex;
-  width: 900rem; /* Adjust the width to accommodate duplicate slides */
+  width: 736rem; /* Adjust the width to accommodate duplicate slides and gaps */
   z-index: 1; /* Ensure slide track is behind the pseudo-elements */
-  animation: scroll 30s linear infinite; /* Apply the animation */
+  animation: scroll 60s linear infinite; /* Apply the animation */
   gap: 5rem;
   height: 52rem;
 }
@@ -107,25 +107,9 @@ img {
   align-items: center;
 }
 
-#canvas1 {
+#canvas1, #canvas2, #canvas3 {
   background-color: #000;
   width: 100%;
-  height: 80%;
-  border: 1px solid black;
-  margin: 1rem;
-}
-
-#canvas2 {
-  background-color: #000;
-  width: 120%;
-  height: 80%;
-  border: 1px solid black;
-  margin: 1rem;
-}
-
-#canvas3 {
-  background-color: #000;
-  width: 120%;
   height: 80%;
   border: 1px solid black;
   margin: 1rem;
