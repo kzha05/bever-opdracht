@@ -1,1 +1,0 @@
-gebruik " npx vite " in de terminal

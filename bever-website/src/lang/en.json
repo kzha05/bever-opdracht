@@ -1,0 +1,69 @@
+{
+	"language": "en",
+	"header": {
+		"imgAlt": "A beaver",
+		"ariaLabelSwitchToDutch": "Switch to Dutch",
+		"ariaLabelSwitchToEnglish": "Switch to English"
+	},
+	"slides": [
+		{
+			"id": "slide-1",
+			"title": "The Beaver [tëmakwe in Munsee [teh-MAH-kweh]",
+			"content": "For the Lenape, the beaver was a special animal, as it was one of the animals that helped Kishelamàkânk create everything from the silent, black nothingness. Kishelamàkânk fell asleep in this void and dreamed of the world as we know it now, with everything nature has to offer. The first time Kishelamàkânk created the earth did not go well, so he sent the spirit Nanapush to earth to fix it. After a great flood washed everything away, the animals he had saved helped him dive into the sea to gather sand and create a new island. The turtle offered to carry this land on its back, as the turtle could float on the water. The beaver was one of the animals that bravely tried to do this, but it floated to the surface lifeless without the necessary land that the muskrat later managed to obtain. It is therefore not surprising that the beaver is so important to the Lenape, as it sacrificed itself for the future of their new land and the existence of everything that came with it."
+		},
+		{
+			"id": "slide-2",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-3",
+			"title": "The Lenape [Leh-NAH-Pay]",
+			"content": "Lenape translated to “the people” was a collection of indigenous peoples who lived in areas such as Delaware and the lower Hudson. The women often took care of the small-scale farming they lived on, as well as the children and cooking. In contrast, the men hunted game and caught fish from the rivers. Both men and women told many stories and created art and music all based on these stories and culture. Many of these stories were also based on the beaver, in which it wanted to convey something specific, an example of such a story is below: The story of the beaver and the muskrat This story is about the contrast between the beaver and the muskrat and how their characters clash. The beaver is known for its diligent personality and skill in building dams. In contrast, the muskrat is more opportunistic and less skilled. The aim of this tale is to highlight cooperation and the importance of a strong community. The beaver is often used in stories to show how it helps maintain the environment and nature."
+		},
+		{
+			"id": "slide-4",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-5",
+			"title": "The Dutch Colonizers [Swanendael - [SWAH-nen-dahl]",
+			"content": "Swanendael, or Zwaanendael means the valley of the swans. This was how the Lenape referred to the Dutch colonies, specifically to the Dutch settlement established in Delaware in 1631. In 1609, the VOC sponsored an expedition to America. The expedition arrived at the Hudson River, where the groundwork for Dutch settlements was laid. Beavers were already nearly extinct in the Netherlands, but in America, there were still many beavers to be found. In 1614, the first trading post was built near present-day Albany, New York. The trade in beaver pelts quickly caught on, and around 1631 the settlement was established where the name for the Dutch colonies came from: Swanendael. Hunting was very different for the Lenape compared to the Dutch; The Lenape had respect for nature and its preservation and tried to find a balance. The Dutch introduced new methods of catching beavers that aimed to yield as many pelts as possible without considering the preservation of the beaver population. The Lenape still saw the beaver as a beaver, but the Dutch saw the beaver as nothing more than a way to make money; a walking hat."
+		},
+		{
+			"id": "slide-7",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-8",
+			"title": "",
+			"content": "Click me!",
+			"note": "Will play a video when clicked."
+		}
+	],
+	"carouselNavigation": [
+		{
+			"ariaLabel": "Go to slide 1"
+		},
+		{
+			"ariaLabel": "Go to slide 2"
+		},
+		{
+			"ariaLabel": "Go to slide 3"
+		},
+		{
+			"ariaLabel": "Go to slide 4"
+		},
+		{
+			"ariaLabel": "Go to slide 5"
+		},
+		{
+			"ariaLabel": "Go to slide 6"
+		},
+		{
+			"ariaLabel": "Go to slide 7"
+		}
+	]
+}

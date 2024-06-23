@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.button {
+	font-family: "Montserrat", sans-serif;
+	width: 15rem;
+	height: 10rem;
+	background: #A79277;
+	border: none;
+}
+
+.button:hover {
+	box-shadow: 0 0 9px rgb(96, 38, 7); /* Apply box-shadow on hover */
+}
+
+/*# sourceMappingURL=button-base.css.map */

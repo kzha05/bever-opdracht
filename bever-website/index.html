@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link href="src/ico/Beaver.ico" rel="icon" type="image/x-icon">
+		<title>Bever Website</title>
+		<link href="css/style.css" rel="stylesheet">
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+					"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+				}
+			}
+		</script>
+		<script defer src="js/main.js" type="module"></script>
+		<script src="js/threejs/model1.js" defer type="module"></script>
+		<script src="js/threejs/model2.js" defer type="module"></script>
+		<script src="js/threejs/model3.js" defer type="module"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="header-content">
+				<div></div> <!-- beaver has to be centered, div is here for that reason because header justify-center -->
+
+				<figure class="figure-mid">
+					<img alt="A beaver" class="figure-mid-beaver" id="beaver" src="/src/img/Beaver.webp">
+				</figure>
+
+				<nav class="figure-flags">
+					<button aria-label="Switch to Dutch" id="language-button-nl">
+						<img alt="Dutch flag" src="/src/img/nl.webp">
+					</button>
+					<span>/</span>
+					<button aria-label="Switch to English" id="language-button-en">
+						<img alt="English flag" src="/src/img/en.webp">
+					</button>
+				</nav>
+			</div>
+		</header>
+
+		<section id="animation-container">
+			<div class="class-container">
+				<div class="lighting-blur">
+					<div class="inner-circle">
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+						<div class="fire-particle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<main>
+			<section class="carousel-container">
+				<div id="carousel-track">
+					<article class="carousel-slide" id="slide-1">
+						<h2>De Bever [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+						<p>Voor de Lenape was de bever een bijzonder dier, het was namelijk een van de dieren die
+							Kishelamàkânk geholpen hebben met het creëren van alles dat bestaat uit het stille, zwarte
+							niets.
+							Kishelamàkânk viel in deze leegte in slaap en droomde van de wereld zoals we hem nu kennen,
+							met alles dat de natuur te bieden heeft.
+							De eerste keer dat Kishelamàkânk de aarde had geschapen verliep niet goed, waarna hij de
+							geest Nanapush naar de aarde stuurde om het op te lossen.
+							Na een grote overstroming was alles weggevaagd en de dieren die hij had gered gingen hem
+							helpen zand uit de zee te duiken om er een nieuw eiland van te maken.
+							De schildpad had aangeboden dit land op zijn rug te dragen, aangezien de schildpad op het
+							water kon drijven.
+							De bever was een van de dieren die dapper heeft geprobeerd om dit te doen, maar hij kwam
+							levenloos boven drijven zonder het nodige land die de muskusrat daarna wel heeft weten te
+							bemachtigen.
+							Het is daarom niet raar dat de bever voor de Lenape zo belangrijk is, hij heeft zich namelijk
+							opgeofferd voor de toekomst van hun nieuwe land en het bestaan van alles dat hier bij kwam.
+						</p>
+					</article>
+					<article class="carousel-slide threejs-slide" id="slide-2">
+						<div class="canvas-container" id="canvas1"></div>
+					</article>
+					<article class="carousel-slide" id="slide-3">
+						<h2>De Lenape [Leh-NAH-Pay]</h2>
+						<p>Lenape vertaald naar “de mensen” was een verzameling inheemse volken die onder andere in
+							het gebied Delaware en aan de onderzijde van de Hudson leefden.
+							De vrouwen zorgden vaak voor de kleinschalige landbouw waar ze van leefden, en voor de
+							kinderen en het koken.
+							Daarentegen zorgden de mannen voor het jagen van wild en vingen vis uit de rivieren.
+							Beide man en vrouw vertelden veel verhalen en maakten kunst en muziek allemaal gebaseerd
+							op deze verhalen en cultuur.
+							Ook waren vele van deze verhalen gebaseerd op de bever waarin deze iets specifieks wilt
+							vertellen, hieronder een voorbeeld van zo’n verhaal:
+							Het verhaal van de bever en de muskusrat
+							Dit verhaal gaat over het contrast tussen de bever en de muskusrat en hoe hun karakter botst.
+							De bever staat bekend om zijn ijverige persoonlijkheid en vaardigheid waarmee hij dammen kan
+							bouwen.
+							In contrast is de muskusrat meer opportunistisch en minder vaardig.
+							Het doel van dit vertelsel is om een licht te leggen op samenwerking en het belang van een
+							sterke gemeenschap.
+							Vaak wordt de bever in verhalen gebruikt om te laten zien hoe hij helpt met het behoud van de
+							omgeving en de natuur.</p>
+					</article>
+					<article class="carousel-slide threejs-slide" id="slide-4">
+						<div class="canvas-container" id="canvas2"></div>
+					</article>
+					<article class="carousel-slide" id="slide-5">
+						<h2>De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]</h2>
+						<p>Swanendael, oftewel Zwaanendael betekent de vallei van de zwanen.
+							Dit was hoe de Lenape naar de Nederlandse kolonies refereerden, specifiek naar de
+							Nederlandse nederzetting die in 1631 in Delaware is gesticht.
+							In het jaar 1609 sponsorde de VOC een expeditie naar Amerika.
+							De expeditie kwam aan bij de Hudson rivier, waar het grondwerk voor Nederlandse
+							nederzettingen werd gelegd.
+							Bevers waren in Nederland al zo goed als uitgestorven, maar in Amerika waren er nog heel veel
+							bevers te vinden.
+							In 1614 was de eerste handelspost gebouwd in de buurt van het tegenwoordige Albany, New
+							York.
+							De handel in beverhuiden sloeg al snel aan en rond 1631 werd de nederzetting gevestigd waar
+							de naam voor de Nederlandse kolonies vandaan kwam: Swanendael.
+							Jagen was voor de Lenape heel anders voor de Nederlanders;
+							De lenape hadden respect voor de natuur en het behoud hiervan en probeerden hier een
+							balans in te vinden..
+							De Nederlanders kwamen met nieuwe methodes om bevers te vangen die zo veel mogelijk
+							vachten moesten opleveren zonder stil te staan bij het behoud van de beverpopulatie.
+							De Lenape zagen de bever nog als bever, maar de Nederlanders zagen de bever als niets meer
+							dan een manier om geld te verdienen; een wandelende hoed.</p>
+					</article>
+					<article class="carousel-slide threejs-slide" id="slide-7">
+						<div class="canvas-container" id="canvas3"></div>
+					</article>
+					<article class="carousel-slide button-slide" id="slide-8">
+						<div class="button-container">
+							<button class="button" id="fire-animation-button">
+								Klik mij!
+							</button>
+							<small>Speelt een video af wanneer je op de knop klikt.</small>
+						</div>
+
+					</article>
+				</div>
+				<div aria-label="Carousel Navigation" id="button-group" role="navigation">
+					<button class="carousel-button" aria-label="Go to slide 1"></button>
+					<button class="carousel-button" aria-label="Go to slide 2"></button>
+					<button class="carousel-button" aria-label="Go to slide 3"></button>
+					<button class="carousel-button" aria-label="Go to slide 4"></button>
+					<button class="carousel-button" aria-label="Go to slide 5"></button>
+					<button class="carousel-button" aria-label="Go to slide 6"></button>
+					<button class="carousel-button" aria-label="Go to slide 7"></button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

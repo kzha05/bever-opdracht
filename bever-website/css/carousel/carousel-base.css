@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-368rem); /* Move the entire width of one set of slides including gaps */
+	}
+}
+
+.carousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70vh;
+	flex-direction: column;
+	background: blue;
+}
+
+/*# sourceMappingURL=carousel-base.css.map */

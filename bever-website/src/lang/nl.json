@@ -1,0 +1,69 @@
+{
+	"language": "nl",
+	"header": {
+		"imgAlt": "Een bever",
+		"ariaLabelSwitchToDutch": "Schakel naar Nederlands",
+		"ariaLabelSwitchToEnglish": "Schakel naar Engels"
+	},
+	"slides": [
+		{
+			"id": "slide-1",
+			"title": "De Bever [tëmakwe in Munsee [teh-MAH-kweh]",
+			"content": "Voor de Lenape was de bever een bijzonder dier, het was namelijk een van de dieren die Kishelamàkânk geholpen hebben met het creëren van alles dat bestaat uit het stille, zwarte niets. Kishelamàkânk viel in deze leegte in slaap en droomde van de wereld zoals we hem nu kennen, met alles dat de natuur te bieden heeft. De eerste keer dat Kishelamàkânk de aarde had geschapen verliep niet goed, waarna hij de geest Nanapush naar de aarde stuurde om het op te lossen. Na een grote overstroming was alles weggevaagd en de dieren die hij had gered gingen hem helpen zand uit de zee te duiken om er een nieuw eiland van te maken. De schildpad had aangeboden dit land op zijn rug te dragen, aangezien de schildpad op het water kon drijven. De bever was een van de dieren die dapper heeft geprobeerd om dit te doen, maar hij kwam levenloos boven drijven zonder het nodige land die de muskusrat daarna wel heeft weten te bemachtigen. Het is daarom niet raar dat de bever voor de Lenape zo belangrijk is, hij heeft zich namelijk opgeofferd voor de toekomst van hun nieuwe land en het bestaan van alles dat hier bij kwam."
+		},
+		{
+			"id": "slide-2",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-3",
+			"title": "De Lenape [Leh-NAH-Pay]",
+			"content": "Lenape vertaald naar “de mensen” was een verzameling inheemse volken die onder andere in het gebied Delaware en aan de onderzijde van de Hudson leefden. De vrouwen zorgden vaak voor de kleinschalige landbouw waar ze van leefden, en voor de kinderen en het koken. Daarentegen zorgden de mannen voor het jagen van wild en vingen vis uit de rivieren. Beide man en vrouw vertelden veel verhalen en maakten kunst en muziek allemaal gebaseerd op deze verhalen en cultuur. Ook waren vele van deze verhalen gebaseerd op de bever waarin deze iets specifieks wilt vertellen, hieronder een voorbeeld van zo’n verhaal: Het verhaal van de bever en de muskusrat Dit verhaal gaat over het contrast tussen de bever en de muskusrat en hoe hun karakter botst. De bever staat bekend om zijn ijverige persoonlijkheid en vaardigheid waarmee hij dammen kan bouwen. In contrast is de muskusrat meer opportunistisch en minder vaardig. Het doel van dit vertelsel is om een licht te leggen op samenwerking en het belang van een sterke gemeenschap. Vaak wordt de bever in verhalen gebruikt om te laten zien hoe hij helpt met het behoud van de omgeving en de natuur."
+		},
+		{
+			"id": "slide-4",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-5",
+			"title": "De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]",
+			"content": "Swanendael, oftewel Zwaanendael betekent de vallei van de zwanen. Dit was hoe de Lenape naar de Nederlandse kolonies refereerden, specifiek naar de Nederlandse nederzetting die in 1631 in Delaware is gesticht. In het jaar 1609 sponsorde de VOC een expeditie naar Amerika. De expeditie kwam aan bij de Hudson rivier, waar het grondwerk voor Nederlandse nederzettingen werd gelegd. Bevers waren in Nederland al zo goed als uitgestorven, maar in Amerika waren er nog heel veel bevers te vinden. In 1614 was de eerste handelspost gebouwd in de buurt van het tegenwoordige Albany, New York. De handel in beverhuiden sloeg al snel aan en rond 1631 werd de nederzetting gevestigd waar de naam voor de Nederlandse kolonies vandaan kwam: Swanendael. Jagen was voor de Lenape heel anders voor de Nederlanders; De lenape hadden respect voor de natuur en het behoud hiervan en probeerden hier een balans in te vinden. De Nederlanders kwamen met nieuwe methodes om bevers te vangen die zo veel mogelijk vachten moesten opleveren zonder stil te staan bij het behoud van de beverpopulatie. De Lenape zagen de bever nog als bever, maar de Nederlanders zagen de bever als niets meer dan een manier om geld te verdienen; een wandelende hoed."
+		},
+		{
+			"id": "slide-7",
+			"title": "",
+			"content": ""
+		},
+		{
+			"id": "slide-8",
+			"title": "",
+			"content": "Klik mij!",
+			"note": "Speelt een video af wanneer je op de knop klikt."
+		}
+	],
+	"carouselNavigation": [
+		{
+			"ariaLabel": "Ga naar dia 1"
+		},
+		{
+			"ariaLabel": "Ga naar dia 2"
+		},
+		{
+			"ariaLabel": "Ga naar dia 3"
+		},
+		{
+			"ariaLabel": "Ga naar dia 4"
+		},
+		{
+			"ariaLabel": "Ga naar dia 5"
+		},
+		{
+			"ariaLabel": "Ga naar dia 6"
+		},
+		{
+			"ariaLabel": "Ga naar dia 7"
+		}
+	]
+}

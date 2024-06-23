@@ -1,10 +1,10 @@
 // lib/StepperControl/StepperControl.cpp
 #include "StepperControl.h"
 #include <Arduino.h>
-#include <Stepper.h>
+#include <AccelStepper.h>
 
 // External declarations
-extern Stepper steppers[];
+extern AccelStepper steppers[];
 
 // Function Definition
 void rotateTarget(int targetNumber) {
@@ -13,9 +13,12 @@ void rotateTarget(int targetNumber) {
         return;
     }
 
-    Stepper& stepper = steppers[targetNumber];
-    stepper.step(STEPS_PER_REVOLUTION / 2); // Rotate 180 degrees (1024 steps)
+    AccelStepper stepper = steppers[targetNumber];
+
+    stepper.setMaxSpeed(100);
+    stepper.setAcceleration(100);
+    stepper.moveTo(STEPS_PER_REVOLUTION / 2); // Rotate 180 degrees
     delay(SECOND_ROTATE_COOLDOWN * 1000);
-    stepper.step(STEPS_PER_REVOLUTION / 2); // Rotate back 180 degrees
+    stepper.moveTo(0); // Rotate back to 0 degrees
     delay(SECOND_ROTATE_COOLDOWN * 1000);
 }

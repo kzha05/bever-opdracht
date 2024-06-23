@@ -2,5 +2,9 @@ IOT/include
 IOT/test
 IOT/.idea
 IOT/.pio
+bever-website/.idea
+bever-website/node_modules
+bever-website/.env
+bever-website/.vscode
 .idea
 cmake-build-debug
