@@ -24,4 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 langButtonNl.addEventListener('click', () => switchLanguage('nl'));
 langButtonEn.addEventListener('click', () => switchLanguage('en'));
 
+switchLanguage('nl');
+
 initiateCarousel();
