@@ -84,6 +84,22 @@ main {
   align-items: center;
 }
 
+#bever-animation {
+  justify-content: center;
+  align-items: center;
+  width: 70rem;
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  display: none;
+  z-index: 1000;
+}
+#bever-animation .animation {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @keyframes circle-grow {
   0% {
     width: 0;
