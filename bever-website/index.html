@@ -21,92 +21,92 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="header">
-			<div class="header-content">
-				<div></div> <!-- beaver has to be centered, div is here for that reason because header justify-center -->
+		<button id="enterFullscreen">Enter Fullscreen</button>
+		<div id="functionfs">
+			<header class="header">
+				<div class="header-content">
+					<div></div> <!-- beaver has to be centered, div is here for that reason because header justify-center -->
 
-				<figure class="figure-mid">
-					<img alt="A beaver" class="figure-mid-beaver" id="beaver" src="./src/img/Beaver.webp">
-				</figure>
+					<figure class="figure-mid">
+						<img alt="A beaver" class="figure-mid-beaver" id="beaver" src="./src/img/Beaver.webp">
+					</figure>
+				
+					<nav class="figure-flags">
+						<button aria-label="Switch to Dutch" id="language-button-nl">
+							<img alt="Dutch flag" src="./src/img/nl.webp">
+						</button>
+						<span>/</span>
+						<button aria-label="Switch to English" id="language-button-en">
+							<img alt="English flag" src="./src/img/en.webp">
+						</button>
+					</nav>
+				</div>
+			</header>
 
-				<nav class="figure-flags">
-					<button aria-label="Switch to Dutch" id="language-button-nl">
-						<img alt="Dutch flag" src="./src/img/nl.webp">
-					</button>
-					<span>/</span>
-					<button aria-label="Switch to English" id="language-button-en">
-						<img alt="English flag" src="./src/img/en.webp">
-					</button>
-				</nav>
-			</div>
-		</header>
-
-		<section id="animation-container">
-			<div class="class-container">
-				<div class="lighting-blur">
-					<div class="inner-circle">
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
-						<div class="fire-particle"></div>
+			<section id="animation-container">
+				<div class="class-container">
+					<div class="lighting-blur">
+						<div class="inner-circle">
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+							<div class="fire-particle"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<main>
-			<section class="carousel-container">
-				<div id="carousel-track">
-					<article class="carousel-slide" id="slide-1">
-						<h2>De Bever [tëmakwe in Munsee [teh-MAH-kweh]</h2>
-						<p> <!-- [lang].json.slides.slide-1.title --> </p>
-					</article>
-					<article class="carousel-slide threejs-slide" id="slide-2">
-						<div class="canvas-container" id="canvas1"></div>
-					</article>
-					<article class="carousel-slide" id="slide-3">
-						<h2>De Lenape [Leh-NAH-Pay]</h2>
-						<p> <!-- [lang].json.slides.slide-3.title --> </p>
-					</article>
-					<article class="carousel-slide threejs-slide" id="slide-4">
-						<div class="sketchfab-embed-wrapper" style="height: 100%;"> <iframe title="diobeter2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%" src="https://sketchfab.com/models/5d30b85953ff44ffbab91d0433e86a89/embed?autostart=1"> </iframe> </div>
-					</article>
-					<article class="carousel-slide" id="slide-5">
-						<h2>De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]</h2>
-						<p> <!-- [lang].json.slides.slide-5.title --> </p>
-					</article>
-					<article class="carousel-slide threejs-slide" id="slide-6">
-						<div class="canvas-container" id="canvas3"></div>
-					</article>
-					<article class="carousel-slide button-slide" id="slide-7">
-						<div class="button-container">
-							<button class="button" id="fire-animation-button">
-								Klik mij!
-							</button>
-							<small>Speelt een video af wanneer je op de knop klikt.</small>
-						</div>
-					</article>
-
-				</div>
-				<div aria-label="Carousel Navigation" id="button-group" role="navigation">
-					<button class="carousel-button" aria-label="Go to slide 1"></button>
-					<button class="carousel-button" aria-label="Go to slide 2"></button>
-					<button class="carousel-button" aria-label="Go to slide 3"></button>
-					<button class="carousel-button" aria-label="Go to slide 4"></button>
-					<button class="carousel-button" aria-label="Go to slide 5"></button>
-					<button class="carousel-button" aria-label="Go to slide 6"></button>
-					<button class="carousel-button" aria-label="Go to slide 7"></button>
-				</div>
 			</section>
-		</main>
-		<article id="bever-animation">
-			<img class="animation" src="./src/video/bever-animation.webp" alt="">
-		</article>
+
+			<main style="background: #EAD8C0;">
+				<section class="carousel-container">
+					<div id="carousel-track">
+						<article class="carousel-slide" id="slide-1">
+							<h2>De Bever [tëmakwe in Munsee [teh-MAH-kweh]</h2>
+							<p> <!-- [lang].json.slides.slide-1.title --> </p>
+						</article>
+						<article class="carousel-slide threejs-slide" id="slide-2">
+							<div class="canvas-container" id="canvas1"></div>
+						</article>
+						<article class="carousel-slide" id="slide-3">
+							<h2>De Lenape [Leh-NAH-Pay]</h2>
+							<p> <!-- [lang].json.slides.slide-3.title --> </p>
+						</article>
+						<article class="carousel-slide threejs-slide" id="slide-4">
+							<div class="sketchfab-embed-wrapper" style="height: 100%;"> <iframe title="diobeter2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%" src="https://sketchfab.com/models/5d30b85953ff44ffbab91d0433e86a89/embed?autostart=1"> </iframe> </div>
+						</article>
+						<article class="carousel-slide" id="slide-5">
+							<h2>De Nederlandse Kolonisatoren [Swanendael - [SWAH-nen-dahl]</h2>
+							<p> <!-- [lang].json.slides.slide-5.title --> </p>
+						</article>
+						<article class="carousel-slide threejs-slide" id="slide-6">
+							<div class="canvas-container" id="canvas3"></div>
+						</article>
+						<article class="carousel-slide button-slide" id="slide-7">
+							<div class="button-container">
+								<button class="button" id="fire-animation-button">
+									Klik mij!
+								</button>
+								<small>Speelt een video af wanneer je op de knop klikt.</small>
+							</div>
+						</article>
+
+					</div>
+					<div aria-label="Carousel Navigation" id="button-group" role="navigation">
+						<button class="carousel-button" aria-label="Go to slide 1"></button>
+						<button class="carousel-button" aria-label="Go to slide 2"></button>
+						<button class="carousel-button" aria-label="Go to slide 3"></button>
+						<button class="carousel-button" aria-label="Go to slide 4"></button>
+						<button class="carousel-button" aria-label="Go to slide 5"></button>
+						<button class="carousel-button" aria-label="Go to slide 6"></button>
+						<button class="carousel-button" aria-label="Go to slide 7"></button>
+					</div>
+				</section>
+			</main>
+		</div>
 	</body>
 </html>
