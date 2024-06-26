@@ -92,3 +92,15 @@ main {
   width: 100%;
   @include fcc;
 }
+
+.modal{
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 30rem;
+  position: absolute;
+  top: 34%;
+  left: 34%;
+  display: none;
+  z-index: 10;
+}
