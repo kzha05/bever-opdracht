@@ -1,7 +1,7 @@
 import { beaver, carouselNavButtons, carouselSlides, langButtonEn, langButtonNl } from '../constants.js';
 
 export default async function switchLanguage(language) {
-	const data = await fetch('../../src/lang/' + language + '.json').then((response) => response.json());
+	const data = await fetch('./src/lang/' + language + '.json').then((response) => response.json());
 
 	beaver.alt = data.header.imgAlt;
 	langButtonNl.setAttribute('aria-label', data.header.ariaLabelSwitchToDutch);

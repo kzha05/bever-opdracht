@@ -17,8 +17,12 @@ export default function initiateCarousel() {
 
 	let currentSlide = 1;
 	let animating = true;
+	let activeTimeout = false;
 
 	function goToSlide(slideNumber) {
+		if (activeTimeout) {
+			return;
+		}
 		if (slideNumber === currentSlide && animating) {
 			slides[currentSlide].style.boxShadow = '0 0 3rem #602607';
 			buttons[currentSlide].style.boxShadow = '0 0 3rem #602607';
@@ -42,9 +46,12 @@ export default function initiateCarousel() {
 
 		buttons[slideNumber].style.background = '#A79277';
 
+
+		activeTimeout = true;
 		setTimeout(() => {
 			slides[currentSlide].style.transform = 'translate(150%, -50%)';
 			currentSlide = slideNumber;
+			activeTimeout = false;
 		}, 500);
 	}
 
